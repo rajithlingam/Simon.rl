@@ -1,4 +1,28 @@
-body {
+.rl_p {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 7rem;
+  margin: 0%;
+}
+
+@keyframes gradient-animation {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+
+  body {
   text-align: center;
   background-color: #011F3F;
 }
@@ -20,8 +44,8 @@ body {
 .btn {
   margin: 25px;
   display: inline-block;
-  height: 200px;
-  width: 200px;
+  height: 100px;
+  width: 100px;
   border: 10px solid black;
   border-radius: 20%;
 }
